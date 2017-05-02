@@ -5,7 +5,8 @@
 Preparation for Training:
 
 Data:
-Download MPII Human Pose Dataset(http://human-pose.mpi-inf.mpg.de/#overview) to ./train/data/
+Download MPII Human Pose Dataset(http://human-pose.mpi-inf.mpg.de/#overview) to ./train/data/ .
+
 As the annotations are stored in a matlab structure, we need to run mat2CSV.m to transform mpii_human_pose_v1_u12_1.mat to data.csv we need.
 
 Training:
