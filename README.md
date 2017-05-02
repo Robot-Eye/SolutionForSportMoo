@@ -10,7 +10,7 @@ Requirements: software
 	-- Python 2 or 3
 	-- TensorFlow >= 1.0.0
 	-- Python bindings for OpenCV	
-	-- matlab
+	-- MATLAB
 	-- Tensorpack 
 		A Neural Network Toolbox on TensorFlow. 
 		We build our model on this platform, you can get it from https://github.com/ppwwyyxx/tensorpack
