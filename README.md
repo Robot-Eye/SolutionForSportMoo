@@ -17,17 +17,17 @@ Requirements: software
 	
 Requirements: hardware
 
--- GPU: Titan, Titan Black, Titan X, K20, K40, K80, GTX 1080Ti.
-   At least 8GB GPU memory will be needed.
+	-- GPU: Titan, Titan Black, Titan X, K20, K40, K80, GTX 1080Ti.
+   		At least 8GB GPU memory will be needed.
    
 Preparation for Testing:
 
 1) Cut input video into images.
 
-Using ffmpeg
+	Using ffmpeg
 
-Ex.
-$ffmpeg -i IMG_1773_A.mp4 -r 30/1 $IMG_1779_A_%05d.png
+	Ex.
+	$ffmpeg -i IMG_1773_A.mp4 -r 30/1 $IMG_1779_A_%05d.png
 
 
 2) Determine the bounding box for person. This model relies a good person detection and a "good" bounding box, the input is only part of image that contains the person we want to estimate.
@@ -50,14 +50,14 @@ Thus, first of all, change line 31 in script: run_cpm.lua
 
 Since the CPM is implemented in torch, please run CPM using commandline below
 
-$th run_cpm.lua
+	$th run_cpm.lua
 
 The output will be run_cpm%5d.png in current folder and also a .csv file will record all pose information
 
 
 5) Using ffmpeg to put all output images back to video:
 
-ffmpeg -r 20 -i new_%05d.png -pix_fmt yuv420p test.mp4
+	ffmpeg -r 20 -i new_%05d.png -pix_fmt yuv420p test.mp4
 
 
 Preparation for Training:
@@ -71,9 +71,9 @@ Training:
 
 Run train/RobotEye_BodyPoseEstimation_V2.py :
 
-Ex.
-$cd train
-$python ./RobotEye_BodyPoseEstimation_V2.py --gpu 0,1 --data_source ./data/data.csv
+	Ex.
+	$cd train
+	$python ./RobotEye_BodyPoseEstimation_V2.py --gpu 0,1 --data_source ./data/data.csv
 
 (Remember to change the data path)
 
