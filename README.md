@@ -48,11 +48,11 @@ Thus, first of all, change line 31 in script: run_cpm.lua
 
 4) run cpm:
 
-   Since the CPM is implemented in torch, please run CPM using commandline below
+Since the CPM is implemented in torch, please run CPM using commandline below
 
 $th run_cpm.lua
 
-    The output will be run_cpm%5d.png in current folder and also a .csv file will record all pose information
+The output will be run_cpm%5d.png in current folder and also a .csv file will record all pose information
 
 
 5) Using ffmpeg to put all output images back to video:
@@ -79,9 +79,8 @@ $python ./RobotEye_BodyPoseEstimation_V2.py --gpu 0,1 --data_source ./data/data.
 
 Note: The training time of one epoch is ~40 min on GTX 1080Ti.
       The entire training time will cost one and a half week.
-
-	  You can use tensorboard to watch the details of training.
-	  The log of training can be find in ./train_log
+      You can use tensorboard to watch the details of training.
+      The log of training can be find in ./train_log
 
 Any questions you can contact us:
 
