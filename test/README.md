@@ -12,7 +12,7 @@ Preparation for Testing:
 Using ffmpeg
 
 Ex. 
-$cd dat
+$cd data
 $mkdir IMG_1775_A
 $ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
 
