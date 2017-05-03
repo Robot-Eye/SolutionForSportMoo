@@ -12,7 +12,9 @@ Preparation for Testing:
 	Using ffmpeg
 
 	Ex. 
-	$ffmpeg -i IMG_1773_A.mp4 -r 30/1 $IMG_1779_A_%05d.png
+	$cd data
+	$mkdir IMG_1775_A
+	$ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
 
 
 2) Determine the bounding box for person. This model relies a good person detection and a "good" bounding box, the input is only part of image that contains the person we want to estimate.
