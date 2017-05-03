@@ -35,7 +35,7 @@ The output will be run_cpm%5d.png in current folder and also a .csv file will re
 
 -- Using ffmpeg to put all output images back to video:
 
-	$ffmpeg -r 20 -i new_%05d.png -pix_fmt yuv420p test.mp4
+	$ffmpeg -r 20 -i pm_%05d.png -pix_fmt yuv420p test.mp4
 
 Any questions you can contact us:
 
