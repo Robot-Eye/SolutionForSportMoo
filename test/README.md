@@ -1,5 +1,11 @@
 *******************************************"Welcome To Use Body Pose Estimation"****************************************
 
+For quickly using, you can simply run:
+
+	$python RPM.py
+
+If you want to test you own video, please follow the steps below:
+
 -- Preparation for Testing:
 
 Cut input video into images.
