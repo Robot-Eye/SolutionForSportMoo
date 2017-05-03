@@ -1,14 +1,15 @@
-"Welcome To Use Body Pose Estimation**"
+*******************************************"Welcome To Use Body Pose Estimation"****************************************
 
 Preparation for Testing:
 
 Cut input video into images.
+
 Using ffmpeg
 
-Ex. 
-$cd data
-$mkdir IMG_1775_A 
-$ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
+	Ex. 
+	$cd data
+	$mkdir IMG_1775_A 
+	$ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
 
 Determine the bounding box for person. This model relies a good person detection and a "good" bounding box, the input is only part of image that contains the person we want to estimate.
 Thus, first of all, change line 31 in script: run_cpm.lua
