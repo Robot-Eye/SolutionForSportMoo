@@ -9,21 +9,12 @@ Preparation for Testing:
 
 1) Cut input video into images.
 
-	-- Python 2 or 3
-	-- TensorFlow >= 1.0.0
-	-- Python bindings for OpenCV	
-	-- MATLAB
-	-- Tensorpack 
-		A Neural Network Toolbox on TensorFlow. 
-		We build our model on this platform, you can get it from https://github.com/ppwwyyxx/tensorpack
+Using ffmpeg
 
-
-	Using ffmpeg
-
-	-- Ex. 
-	-- $cd dat
-	-- $mkdir IMG_1775_A
-	-- $ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
+Ex. 
+$cd dat
+$mkdir IMG_1775_A
+$ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
 
 
 2) Determine the bounding box for person. This model relies a good person detection and a "good" bounding box, the input is only part of image that contains the person we want to estimate.
