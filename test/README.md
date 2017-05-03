@@ -37,7 +37,7 @@ Since the POSE_ESTIMATION.lua is implemented in torch, please run it using comma
 	$cd ..
 	$th  POSE_ESTIMATION.lua
 	
-The output will be run_cpm%5d.png in current folder and also a .csv file will record all pose information
+The output will be pm_%5d.png in current folder and also a .csv file will record all pose information
 
 -- Using ffmpeg to put all output images back to video:
 
