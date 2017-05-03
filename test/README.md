@@ -12,9 +12,10 @@ Using ffmpeg
 	$ffmpeg -i IMG_1775_A.mp4 -r 30/1 ./IMG_1775_A/$IMG_1775_A_%05d.png
 
 Determine the bounding box for person. This model relies a good person detection and a "good" bounding box, the input is only part of image that contains the person we want to estimate.
-Thus, first of all, change line 31 in script: run_cpm.lua
 
-  RGB_image = image.crop(RGB_image,19,400,19+480,400+480)
+	Thus, first of all, change line 31 in script: run_cpm.lua
+
+	  RGB_image = image.crop(RGB_image,19,400,19+480,400+480)
 		left corner of bounding box(x,y), right corner of bounding box (x,y)
 
 You have to manually estimate the position of bounding box and place it here.
